@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Starting of NavBar */
+
+.nav {
+  position: fixed;
+  color: black;
+  height: 8rem;
+  /* overflow: hidden; */
+  display: block;
+  padding: 0.2rem 0 1rem 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  opacity: 0.99;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/* NavBar div1 */
+.nav-div1 {
+  display: flex;
+  align-items: center;
+}
+/* navbar youtube logo */
+.logo {
+  display: flex;
+  margin: 0 8rem 0 6rem;
+}
+.logo sub {
+  font-size: o.4rem;
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+/* navbar search button */
+.yt-search {
+  display: flex;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #fff;
+}
+.yt-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.yt-search button {
+  border: none;
+  background: #f8f8f8;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.yt-search button:hover {
+  background: #e6e6e6;
+}
+
+/* navbar voice search button */
+.voice-search {
+  margin: 0 2rem 0 1.6rem;
+  text-align: center;
+}
+.voice-search button {
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 2.6rem;
+  width: 2.3rem;
+  border: none;
+  font-size: 1.2rem;
+}
+.voice-search button:hover {
+  background-color: rgb(185, 194, 198);
+}
+
+/* navbar create button */
+.create {
+  display: flex;
+  margin: 0 0.5rem 0 0.4rem;
+}
+.create button {
+  width: 6rem;
+  height: 2.2rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+/* navbar notification button */
+.notification button {
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 2.8rem;
+  border: none;
+  font-size: 1.4rem;
+  margin: 0;
+  background: transparent;
+}
+.notification:hover {
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+/* navbar profile button */
+.profile {
+  margin: 0 0.6rem 0 2rem;
+}
+.profile button {
+  border-radius: 50%;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.1rem;
+  border: none;
+}
+
+/* NavBar div2 */
+.nav-div2-links {
+  display: flex;
+  list-style: none;
+  gap: 0.8rem;
+  margin: 0.2rem 0 0.3rem 6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.nav-div2-links a {
+  text-decoration: none;
+  color: black;
+}
+.div2-link1 {
+  background-color: whitesmoke;
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+
+/* Ending of navBar */
+
+/* sideBar Section */
+
+/* Sidebar menu icon */
+.menu-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0.7rem 0 0 2.1rem;
+  position: absolute;
+}
+.menu-icon:hover {
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 55px;
+  left: -260px;
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  color: #333;
+  transform: translatex(-100% 0);
+  margin-top: 0rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+  z-index: 2000;
+  font-size: 0.8rem;
+}
+
+.sidebar li {
+  padding: 15px;
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+.sidebar a {
+  display: block;
+  width: 200px;
+  margin: 0 0 0 0.5rem;
+  padding: 0 0 1rem 1rem;
+  text-decoration: none;
+  color: #333;
+}
+.sidebar a:hover {
+  background-color: rgb(212, 208, 208);
+  font-size: 1.2rem;
+  font-weight: 1rem;
+  border-radius: 0.3rem;
+}
+
+/* checkbox logic */
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked ~ .sidebar {
+  left: 0;
+}
+/* End Of SideBar */
+
+/* Short Sidebar bottom left After nav  */
+.short-sidebar {
+  width: 78px;
+  height: 100vh;
+  position: fixed;
+  top: 80px;
+  z-index: 1000;
+  padding: 0 0 0 1rem;
+}
+
+.short-sidebar a {
+  display: block;
+  height: 60px;
+  text-decoration: none;
+  padding: 1rem 0 0.4rem 0.4rem;
+  color: #333;
+  font-size: 0.6rem;
+}
+.short-sidebar i {
+  font-size: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.short-sidebar a:hover {
+  background-color: rgb(211, 194, 194);
+  border-radius: 0.3rem;
+}
+
+/* Main Content Section */
+main {
+  margin-left: 70px;
+  padding: 20px;
+  margin-top: 8rem;
+}
